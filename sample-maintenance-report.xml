@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MaintenanceReport>
+  <Reference>WO-2024-XML-001</Reference>
+  <ReportDate>2024-03-20</ReportDate>
+  <Equipment>
+    <EquipmentNumber>WT-SOUTH-22</EquipmentNumber>
+    <EquipmentType>wind_turbine</EquipmentType>
+    <Site>Southern Wind Complex</Site>
+    <SerialNumber>SN-2021-8847</SerialNumber>
+  </Equipment>
+  <MaintenanceType>corrective</MaintenanceType>
+  <Description>Gearbox bearing replacement</Description>
+  <WorkPerformed>Removed old bearing, installed new SKF bearing, refilled oil to spec</WorkPerformed>
+  <Technician>Emma Rodriguez</Technician>
+  <TechnicianCompany>WindTech Services</TechnicianCompany>
+  <HoursWorked>12</HoursWorked>
+  <Findings>Main bearing showed pitting and spalling. Secondary bearings OK.</Findings>
+  <Recommendations>Extend oil analysis to monthly. Schedule gearbox overhaul in 18 months.</Recommendations>
+  <PartsUsed>
+    <Part material="SKF-6308" qty="1" desc="Main bearing"/>
+    <Part material="OIL-GBX-75W90" qty="45" unit="L" desc="Gearbox oil"/>
+  </PartsUsed>
+</MaintenanceReport>

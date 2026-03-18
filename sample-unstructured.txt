@@ -1,0 +1,22 @@
+MAINTENANCE REPORT - Site: Nordic Wind Farm
+Date: 15 March 2024
+Work Order: WO-2024-TXT-001
+
+Equipment: WT-NORTH-07 (Wind Turbine)
+Location: Tower 7, North Sector
+
+Type: Preventive maintenance - Annual inspection
+
+Work performed:
+- Visual inspection of all three blades
+- Checked blade pitch mechanism
+- Inspected nacelle exterior for cracks or corrosion
+- Verified lightning protection system
+
+Technician: John Smith, 4.5 hours
+
+Findings: Minor erosion observed on blade 2 leading edge, approximately 15cm section. No structural concern.
+
+Recommendations: Schedule blade repair before next winter. Consider protective coating on leading edges.
+
+Next scheduled: 15 September 2024
