@@ -138,9 +138,22 @@ export async function POST(request: NextRequest) {
       equipmentId = eq?.id ?? null;
     }
 
+    // Ensure unique reference_number (avoid duplicate key on re-upload)
+    let referenceNumber = extracted.report?.reference_number ?? null;
+    if (referenceNumber) {
+      const { data: existing } = await supabase
+        .from("reports")
+        .select("id")
+        .eq("reference_number", referenceNumber)
+        .maybeSingle();
+      if (existing) {
+        referenceNumber = `${referenceNumber}-${Date.now().toString(36)}`;
+      }
+    }
+
     // Insert report
     const reportData = {
-      reference_number: extracted.report?.reference_number ?? null,
+      reference_number: referenceNumber,
       source_file_id: fileRecord?.id ?? null,
       equipment_id: equipmentId,
       report_date: extracted.report?.report_date ?? new Date().toISOString().slice(0, 10),
