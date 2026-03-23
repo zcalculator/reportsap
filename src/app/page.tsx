@@ -164,9 +164,9 @@ export default function Home() {
           <Image
             src={logo}
             alt="ReportSAP - Converts any report to SAP ready XML"
-            width={280}
-            height={84}
-            className="h-auto w-full max-w-[260px]"
+            width={340}
+            height={102}
+            className="h-auto w-full max-w-[320px]"
             priority
           />
           <p className="mt-2 text-center text-xs text-[#6b7280]">
