@@ -87,6 +87,25 @@ export async function extractWithGemini(
     jsonStr = jsonStr.replace(/^```(?:json)?\n?/, "").replace(/\n?```$/, "");
   }
 
+  // Extract only the first complete JSON object (Gemini may append explanation/text after)
+  const firstBrace = jsonStr.indexOf("{");
+  if (firstBrace === -1) {
+    throw new Error("No JSON object found in model response");
+  }
+  let depth = 0;
+  let end = -1;
+  for (let i = firstBrace; i < jsonStr.length; i++) {
+    if (jsonStr[i] === "{") depth++;
+    else if (jsonStr[i] === "}") {
+      depth--;
+      if (depth === 0) {
+        end = i + 1;
+        break;
+      }
+    }
+  }
+  jsonStr = end > 0 ? jsonStr.slice(firstBrace, end) : jsonStr.slice(firstBrace);
+
   const parsed = JSON.parse(jsonStr) as GeminiExtractionResult;
 
   // Normalize maintenance_type
