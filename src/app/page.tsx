@@ -160,16 +160,16 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-[#fafafa] text-[#1a1a1a]">
       <div className="mx-auto max-w-4xl px-5 py-8 sm:px-6">
-        <header className="mb-8">
+        <header className="mb-8 flex flex-col items-center">
           <Image
             src={logo}
             alt="ReportSAP - Converts any report to SAP ready XML"
-            width={400}
-            height={120}
-            className="h-auto w-full max-w-md"
+            width={280}
+            height={84}
+            className="h-auto w-full max-w-[260px]"
             priority
           />
-          <p className="mt-2 text-xs text-[#6b7280]">
+          <p className="mt-2 text-center text-xs text-[#6b7280]">
             Upload service/maintenance documents (CSV, Excel, XML). Data is
             extracted with AI and saved for SAP PM export.
           </p>
