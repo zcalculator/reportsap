@@ -1,6 +1,8 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Image from "next/image";
+import logo from "@/logo.jpg";
 
 interface ReportSummary {
   id: string;
@@ -159,10 +161,15 @@ export default function Home() {
     <div className="min-h-screen bg-[#fafafa] text-[#1a1a1a]">
       <div className="mx-auto max-w-4xl px-5 py-8 sm:px-6">
         <header className="mb-8">
-          <h1 className="text-xl font-semibold tracking-tight text-[#1a1a1a]">
-            ReportSAP
-          </h1>
-          <p className="mt-1 text-xs text-[#6b7280]">
+          <Image
+            src={logo}
+            alt="ReportSAP - Converts any report to SAP ready XML"
+            width={400}
+            height={120}
+            className="h-auto w-full max-w-md"
+            priority
+          />
+          <p className="mt-2 text-xs text-[#6b7280]">
             Upload service/maintenance documents (CSV, Excel, XML). Data is
             extracted with AI and saved for SAP PM export.
           </p>
