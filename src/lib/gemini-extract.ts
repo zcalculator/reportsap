@@ -58,9 +58,11 @@ Return a valid JSON object with this exact structure. Use null for unknown value
       "unit": "string or null",
       "unit_cost": number or null
     }
-  ]
+  ],
+  "additional_points": {}
 }
 
+IMPORTANT - additional_points: Any important data in the document that does NOT fit the fields above (report, equipment, operations, components) must go here. Use a flexible JSON object: keys are descriptive names (snake_case), values can be strings, numbers, dates, booleans, arrays, or nested objects. Examples: {"warranty_info": "2 years"}, {"custom_metrics": {"vibration_readings": [0.1, 0.2]}}, {"contract_details": {"po_number": "PO-123", "terms": "Net 30"}}. Use null or empty {} if nothing extra.
 Extract all relevant data from the document. If equipment type is unclear, infer from context (e.g., blade inspection = wind_turbine).
 Return ONLY valid JSON, no markdown or explanation.`;
 

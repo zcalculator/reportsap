@@ -67,6 +67,7 @@ interface ReportDetail {
     unit?: string;
     unit_cost?: number;
   }>;
+  additional_points?: Record<string, unknown>;
 }
 
 export default function Home() {
@@ -428,6 +429,16 @@ export default function Home() {
                         </div>
                       ))}
                     </div>
+                  </div>
+                )}
+
+                {viewingReport.additional_points &&
+                  Object.keys(viewingReport.additional_points).length > 0 && (
+                  <div className="rounded border border-[#e5e7eb] p-3">
+                    <h4 className="mb-2 text-[10px] font-medium uppercase tracking-wider text-[#6b7280]">Additional Points</h4>
+                    <pre className="overflow-x-auto whitespace-pre-wrap break-words text-xs text-[#1a1a1a]">
+                      {JSON.stringify(viewingReport.additional_points, null, 2)}
+                    </pre>
                   </div>
                 )}
               </div>

@@ -181,6 +181,11 @@ export async function POST(request: NextRequest) {
       total_cost: extracted.report?.total_cost ?? null,
       next_scheduled_maintenance: extracted.report?.next_scheduled_maintenance ?? null,
       raw_extracted_data: extracted as unknown as Record<string, unknown>,
+      additional_points:
+        extracted.additional_points &&
+        Object.keys(extracted.additional_points).length > 0
+          ? (extracted.additional_points as Record<string, unknown>)
+          : null,
     };
 
     const { data: report, error: reportError } = await supabase

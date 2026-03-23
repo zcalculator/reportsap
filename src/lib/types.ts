@@ -74,6 +74,7 @@ export interface Report {
   total_cost?: number;
   next_scheduled_maintenance?: string;
   raw_extracted_data?: Record<string, unknown>;
+  additional_points?: Record<string, unknown>;
   created_at: string;
   updated_at: string;
   equipment?: Equipment;
@@ -109,4 +110,5 @@ export interface GeminiExtractionResult {
   equipment?: Partial<Equipment>;
   operations?: Partial<ReportOperation>[];
   components?: Partial<ReportComponent>[];
+  additional_points?: Record<string, unknown>;
 }
