@@ -41,10 +41,11 @@ export async function GET(request: NextRequest) {
         status,
         description,
         equipment_id,
+        created_at,
         equipment (equipment_number, equipment_type, site_location)
       `
       )
-      .order("report_date", { ascending: false })
+      .order("created_at", { ascending: false })
       .limit(100);
 
     if (error) {

@@ -20,4 +20,8 @@
     <Part material="SKF-6308" qty="1" desc="Main bearing"/>
     <Part material="OIL-GBX-75W90" qty="45" unit="L" desc="Gearbox oil"/>
   </PartsUsed>
+  <WarrantyThrough>2026-09-15</WarrantyThrough>
+  <PORef>PO-91234</PORef>
+  <VibrationMmPerS>1.8</VibrationMmPerS>
+  <ContractTerms>Net 30</ContractTerms>
 </MaintenanceReport>

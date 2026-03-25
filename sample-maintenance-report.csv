@@ -1,6 +1,6 @@
-Reference,Report Date,Equipment Number,Equipment Type,Site,Maintenance Type,Description,Work Performed,Technician,Hours,Findings,Recommendations
-WO-2024-001,2024-03-15,WT-NORTH-07,wind_turbine,Nordic Wind Farm,preventive,Annual blade inspection,Visual inspection of all 3 blades,John Smith,4.5,Minor erosion on blade 2 leading edge,Schedule repair in Q2
-WO-2024-002,2024-03-12,GB-001,gearbox,Industrial Site A,corrective,Gearbox oil leak,Replaced seal and refilled oil,Jane Doe,6,Seal worn - possible bearing wear,Monitor vibration levels
-WO-2024-003,2024-03-18,TURB-A12,wind_turbine,Coastal Wind Park,inspection,Nacelle condition check,Checked hydraulic system and generator bearings,Mike Johnson,3,All systems nominal,Next inspection in 6 months
-WO-2024-004,2024-03-10,GEN-005,generator,Power Plant B,preventive,Bearing lubrication,Applied high-temp grease to main bearings,Sarah Williams,2,No abnormal wear detected,Continue quarterly lubrication
-WO-2024-005,2024-03-14,HYD-SYS-03,hydraulic_system,Offshore Platform,corrective,Pitch cylinder replacement,Replaced faulty pitch cylinder on blade 1,David Chen,8,Cylinder seal failure due to age,Replace remaining cylinders within 12 months
+Reference,Report Date,Equipment Number,Equipment Type,Site,Maintenance Type,Description,Work Performed,Technician,Hours,Findings,Recommendations,Warranty Through,PO Ref,Vibration mm/s
+WO-2024-001,2024-03-15,WT-NORTH-07,wind_turbine,Nordic Wind Farm,preventive,Annual blade inspection,Visual inspection of all 3 blades,John Smith,4.5,Minor erosion on blade 2 leading edge,Schedule repair in Q2,2026-06-30,,
+WO-2024-002,2024-03-12,GB-001,gearbox,Industrial Site A,corrective,Gearbox oil leak,Replaced seal and refilled oil,Jane Doe,6,Seal worn - possible bearing wear,Monitor vibration levels,,PO-88472,2.1
+WO-2024-003,2024-03-18,TURB-A12,wind_turbine,Coastal Wind Park,inspection,Nacelle condition check,Checked hydraulic system and generator bearings,Mike Johnson,3,All systems nominal,Next inspection in 6 months,,,0.8
+WO-2024-004,2024-03-10,GEN-005,generator,Power Plant B,preventive,Bearing lubrication,Applied high-temp grease to main bearings,Sarah Williams,2,No abnormal wear detected,Continue quarterly lubrication,2025-12-31,PO-90112,
+WO-2024-005,2024-03-14,HYD-SYS-03,hydraulic_system,Offshore Platform,corrective,Pitch cylinder replacement,Replaced faulty pitch cylinder on blade 1,David Chen,8,Cylinder seal failure due to age,Replace remaining cylinders within 12 months,,,1.4
